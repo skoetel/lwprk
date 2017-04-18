@@ -1,0 +1,15 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: lidzpark
+  host: lidzpark
+  disk_quota: 1024M
+  services:
+  - lidzpark-cloudantNoSQLDB
+  - lidzpark-iotf-service
+  - availability-monitoring-auto
+  env:
+    NODE_RED_PASSWORD: wiewiorka1
+    NODE_RED_USERNAME: skoetel
